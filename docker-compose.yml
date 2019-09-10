@@ -24,8 +24,8 @@ services:
     depends_on:
       - mysql
     ports:
-      - "8080:8080"
-      - "8888:8888"
+      - "203.178.158.40:8080:8080"
+      - "203.178.158.40:8888:8888"
     secrets:
       - db_password
     env_file:
@@ -75,7 +75,7 @@ services:
     depends_on:
       - mysql
     ports:
-      - "3000:3000"
+      - "203.178.158.40:3000:3000"
     secrets:
       - db_password
       - rails_secret_key_base
